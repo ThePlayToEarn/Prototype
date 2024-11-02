@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to CSS -->
+    <title>My Land</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Main Menu</a></li>
+                <li><a href="../business/business.html">Business</a></li>
+                <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
+                <li><a href="../bank/bank.html">Bank</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+                <li><a href="../character-sheet/character-sheet.html">Character Sheet</a></li>
+                <li><a href="../my-land/my-land.html">My Land</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>My Land</h1>
+    
+    <button id="collect-wood-button">Wood Cutting</button>
+
+    <section id="inventory-section">
+        <h2>Your Inventory</h2>
+        <div id="inventory-grid" class="inventory-grid"></div> <!-- Inventory grid -->
+    </section>
+
+    <main>
+        <section id="experience-section">
+            <div id="experience-bar-container">
+                <div id="experience-bar"></div>
+                <span id="experience-progress">0%</span>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 ThePlayToEarn</p>
+    </footer>
+
+    <!-- Link to JavaScript at the end of the body -->
+    <script src="my-land.js"></script>
+
+    <script src="../game/inventory/inventory.js"></script> <!-- Adjust the path as necessary -->
+   
+</body>
+</html>

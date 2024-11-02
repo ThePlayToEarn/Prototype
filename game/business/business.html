@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"> <!-- Ensure the path to style.css is correct -->
+    <title>Business Menu</title>
+    <script src="business.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Main Menu</a></li>
+                <li><a href="../business/business.html">Business</a></li>
+                <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
+                <li><a href="../bank/bank.html">Bank</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+                <li><a href="../character-sheet/character-sheet.html">Character Sheet</a></li>
+                <li><a href="../my-land/my-land.html">My Land</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section>
+            <h2>Your Businesses</h2>
+            <div class="business-list">
+                <!-- Business items will be dynamically added here -->
+            </div>
+            <button id="add-business">Add New Business</button>
+            <button id="contracts">Contracts</button>
+            <button id="contracts">Manage employees</button>
+        </section>
+
+        <section>
+            <h2>Manage Your Business</h2>
+            <button id="view-stats">View Business Stats</button>
+            <button id="upgrade-business">Upgrade Business</button>
+            <button id="sell-business">Sell Business</button>
+            
+        </section>
+
+        <section>
+            <h2>Inventory (10 Slots)</h2>
+            <div id="inventory-grid" class="inventory-grid">
+                <!-- Inventory items will be displayed here -->
+            </div>
+        </section>
+
+        
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 ThePlayToEarn</p>
+    </footer>
+</body>
+</html>

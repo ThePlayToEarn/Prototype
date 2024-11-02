@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Character Sheet</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Main Menu</a></li>
+                <li><a href="../business/business.html">Business</a></li>
+                <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
+                <li><a href="../bank/bank.html">Bank</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+                <li><a href="../character-sheet/character-sheet.html">Character Sheet</a></li>
+                <li><a href="../my-land/my-land.html">My Land</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="character-info">
+            <h1>Character Sheet</h1>
+            <div class="character-stats">
+                <h2>Character Details</h2>
+                <p>Name: <span id="character-name">Player Name</span></p>
+                <p>Level: <span id="character-level">1</span></p>
+                <p>Experience: <span id="character-exp">0</span> / 100</p>
+            </div>
+        </section>
+
+        <section class="character-stats">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>Wood Cutting</p>
+                <div id="woodcutting-level">Level: 1</div>
+                <div id="woodcutting-xp">XP: 0 / 90</div>
+                <div class="xp-bar">
+                    <div id="woodcutting-xp-bar" class="xp-progress"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="character-stats">
+            <h2>Attributes</h2>
+            <p>Strength: <span id="character-strength">10</span></p>
+            <p>Agility: <span id="character-agility">8</span></p>
+            <p>Intelligence: <span id="character-intelligence">12</span></p>
+            <button id="upgrade-attributes">Upgrade Attributes</button>
+        </section>
+
+
+        <section class="inventory-section">
+            <h2>Inventory (10 Slots)</h2>
+            <div class="inventory-grid" id="character-inventory">
+                <!-- Inventory items will be dynamically displayed here by loadInventoryInCharacterSheet() -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ThePlayToEarn</p>
+    </footer>
+
+    <script src="character-sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+/* Map Section */
+#map {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.tile.for-sale {
+    background-color: #FFA07A;
+    border: 1px solid #FF6347;
+}
+
+.tile.owned {
+    background-color: #87CEEB;
+    border: 1px solid #4682B4;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #FF7F50;
+}
+
+.tile:active {
+    transform: scale(0.98);
+}
+
+/* Business, Bank, and Inventory Menus */
+#business, #bank, #inventory {
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    max-width: 60%;
+    background-color: #ffffff;
+}
+
+/* Character Sheet, Task, and Inventory Display */
+.character-info, .inventory-section, .character-stats, #land-details {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#land-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+/* Inventory Display */
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+}
+
+.inventory-item {
+    width: 60px;
+    height: 60px;
+    background: #e2e2e2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.inventory-item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.inventory-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.empty-slot {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+/* Experience Bar */
+#experience-bar-container {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#experience-bar {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#experience-progress {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/* Collected Wood */
+.collected {
+    border: 2px solid #049528;
+    box-shadow: 0px 0px 15px 5px rgba(24, 172, 8, 0.7);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(20, 149, 8, 0.2);
+}
+
+.collected:hover {
+    box-shadow: 0px 0px 20px 10px rgba(4, 228, 23, 0.9);
+    transform: scale(1.05);
+}
+
+.collected.animated {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Button Styles */
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.destroy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+/* Marketplace Section */
+#marketplace {
+    margin: 20px;
+}
+
+#resources-for-sale, #your-inventory {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.resource-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Specific Component Styles */
+#collect-wood-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+}
+
+
+/* XP Bar Styling */
+.xp-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.xp-progress {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0; /* Default width, will expand with XP */
+    transition: width 0.3s ease; /* Smooth transition */
+}

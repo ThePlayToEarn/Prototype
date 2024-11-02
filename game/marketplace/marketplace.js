@@ -32,8 +32,8 @@ function displayMarketplace() {
     marketplaceElement.innerHTML = '';
 
     const itemsForSale = {
-        "t1-wood.png": { price: "10 Copper Coins"  },
-        "t1-axe.png": { price: "5 Copper Coins" }
+        "t1-wood.png": { price: "5 Copper Coins"  },
+        "t1-axe.png": { price: "200 Copper Coins" }
     };
 
     for (const [item, info] of Object.entries(itemsForSale)) {
@@ -71,8 +71,8 @@ function displayMarketplace() {
 
 function buyItem(item) {
     const itemsForSale = {
-        "t1-wood.png": { price: 10, quantity: 5, averagePriceHistory: "$8.50" },
-        "t1-axe.png": { price: 15, quantity: 3, averagePriceHistory: "$12.00" }
+        "t1-wood.png": { price: 5, quantity: 5,  },
+        "t1-axe.png": { price: 200, quantity: 3,  }
     };
     const itemInfo = itemsForSale[item];
 

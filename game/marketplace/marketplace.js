@@ -92,7 +92,7 @@ function buyItem(item) {
 }
 
 function resetGame() {
-    const confirmation = confirm("Are you sure you want to reset the entire game?");
+    const confirmation = confirm("Are you sure you want to reset the whole game?");
     if (confirmation) {
         localStorage.clear();
         inventory = [];
